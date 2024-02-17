@@ -1,0 +1,204 @@
+---
+? ''
+: - octodns:
+      cloudflare:
+        auto-ttl: true
+    ttl: 300
+    type: A
+    value: 5.255.91.120
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+    ttl: 300
+    type: MX
+    value:
+      exchange: mail.codinger.net.
+      preference: 10
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+    ttl: 300
+    type: TXT
+    value: v=spf1 a mx ip4:5.255.91.118 ip6:2a00:1ca8:2a:c::3:0 ~all
+_25._tcp.mail:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: TLSA
+  value:
+    certificate_association_data: dc814a26c8cebd7d3e913fb147372f78bf138bf55001d07da0fd1c5397b1b893
+    certificate_usage: 3
+    matching_type: 1
+    selector: 1
+_autodiscover._tcp:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: SRV
+  value:
+    port: 443
+    priority: 10
+    target: mail.codinger.net.
+    weight: 10
+_dmarc:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: TXT
+  value: v=DMARC1\; p=none
+autoconfig:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: mail.codinger.net.
+autodiscover:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: mail.codinger.net.
+backup1:
+- octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 178.63.165.229
+- octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: AAAA
+  value: 2a01:4f8:231:f417::a
+backup.nl1:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: AAAA
+  value: 2a00:1ca8:2a:c::2:0
+befit-backend:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 5.255.91.117
+bom1:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 148.113.8.173
+dkim._domainkey:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: TXT
+  value: v=DKIM1\;k=rsa\;t=s\;s=email\;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApwPXgKOPXI9OetmUVgCOVd7NT4mP8KtZ/mONVvu3MlB+/QosrE9G+NIYNXEyzM4T580/9UtZdWhKSSqknsSCTTGjU6ws7+DyVABHxg5fqj5RH8oQkuy0t+nxA0zutdeL4TxNh9GmSVZa+48kFXtK4I13IBAIIRSVPL9/BCo2TuUmwBsJjrYVAk+06EfcllPqHTXbr8UWb8bBcMVVNQ4t7duy6wj8FhUbtsFM0IGpM83iKDej8GFQfGWbmjxc0ziIXPqSx6bIAITnJ+IFnYZdGhIPR3yIQV8gtckfJfYqvt0SwaLK/KN5M9ZFVdbr0l9HC0WmMuqTd31BhLQYLZN2lwIDAQAB
+fr1:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 51.210.114.62
+game1:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 5.255.91.116
+mail:
+- octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 5.255.91.118
+- octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: AAAA
+  value: 2a00:1ca8:2a:c::3:0
+- octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: TXT
+  value: v=spf1 a mx ip4:5.255.91.118 ip6:2a00:1ca8:2a:c::3:0 ~all
+nginx-router.bom1:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 148.113.15.19
+nl1:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 5.255.91.114
+router.bom1:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 148.113.15.19
+router.nl1:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 5.255.90.13
+status:
+  ttl: 300
+  type: URLFWD
+  value:
+    code: 302
+    masking: 2
+    path: /
+    query: 0
+    target: https://stats.uptimerobot.com/WQPj5hGE0
+uk1:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 51.89.195.228
+uptime:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: reports.hetrixtools.com.
+web.nl1:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 5.255.91.120
+www:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 5.255.91.120

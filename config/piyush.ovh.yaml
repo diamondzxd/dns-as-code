@@ -1,0 +1,132 @@
+---
+? ''
+: - octodns:
+      cloudflare:
+        auto-ttl: true
+    ttl: 300
+    type: A
+    values:
+    - 185.199.108.153
+    - 185.199.109.153
+    - 185.199.110.153
+    - 185.199.111.153
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+    ttl: 300
+    type: AAAA
+    values:
+    - 2606:50c0:8000::153
+    - 2606:50c0:8001::153
+    - 2606:50c0:8002::153
+    - 2606:50c0:8003::153
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+    ttl: 300
+    type: MX
+    value:
+      exchange: smtp.google.com.
+      preference: 1
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+    ttl: 300
+    type: TXT
+    value: v=spf1 include:_spf.google.com ~all
+_acme-challenge.recipe:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: TXT
+  value: Qnwtie5BetfTzKuTPj2au7K-SPoiefcKwMJAlZFftLI
+_autodiscover._tcp:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: SRV
+  value:
+    port: 443
+    priority: 5
+    target: mail.codinger.net.
+    weight: 5
+_dmarc:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: TXT
+  value: v=DMARC1\; p=none
+autoconfig:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: mail.codinger.net.
+autodiscover:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: mail.codinger.net.
+immich:
+- octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 148.113.15.19
+- octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: AAAA
+  value: 2402:1f00:8300:4ad::3:0
+piyush._domainkey:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: TXT
+  value: v=DKIM1\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArAehEOwugAOxSOsv7Hn7Doe99M+ixr3k0Sdg1LIwAOAOinrvArHUsP76cADmiBhQMx8CNCJd/bdnRci95p+OohwC2ubmJoP0ZL99mvuQPT87XtIDmlldkd+AdLkO83K9/LjpSF3TeFqwty5gcCcJLPhDiR+iWYMJ9tTo1kKfF0VKVeMzhnGIvsbWIhw8M0XvoX5uwdvzrwCJ0dFHAxT8MKzC6tunV+6K79cBBGtAcWH7r4tfJB9SRlWFqd7RHdynJVg6gIOqHRVHYDdptBei31/80nGul1INZrPNnGcTDa3fTQ8uWzz0/MQwKNtg9spb/hJ1JmTmvdtVnbDuHX9iBQIDAQAB
+rdp:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: router.bom1.codinger.net.
+recipe:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 199.36.158.100
+resume:
+- octodns:
+    cloudflare:
+      auto-ttl: true
+      proxied: true
+  ttl: 300
+  type: A
+  value: 8.8.8.8
+- ttl: 300
+  type: URLFWD
+  value:
+    code: 302
+    masking: 2
+    path: /*
+    query: 0
+    target: https://drive.google.com/file/d/1i7oVTeZLLqrsxD2kkRAxR3-uOB144tkc/view?usp=sharing
+www:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: piyush.ovh.

@@ -1,0 +1,124 @@
+---
+? ''
+: - octodns:
+      cloudflare:
+        auto-ttl: true
+    ttl: 300
+    type: A
+    value: 148.113.15.16
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+    ttl: 300
+    type: AAAA
+    value: 2402:1f00:8300:4ad::1:0
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+    ttl: 300
+    type: MX
+    values:
+    - exchange: aspmx.l.google.com.
+      preference: 1
+    - exchange: alt1.aspmx.l.google.com.
+      preference: 5
+    - exchange: alt2.aspmx.l.google.com.
+      preference: 5
+    - exchange: alt3.aspmx.l.google.com.
+      preference: 10
+    - exchange: alt4.aspmx.l.google.com.
+      preference: 10
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+    ttl: 300
+    type: TXT
+    value: v=spf1 include:_spf.google.com ~all
+_dmarc:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: TXT
+  value: v=DMARC1\; p=none\;
+beta:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 5.255.91.120
+deposit:
+- octodns:
+    cloudflare:
+      auto-ttl: true
+      proxied: true
+  ttl: 300
+  type: A
+  value: 8.8.8.8
+- ttl: 300
+  type: URLFWD
+  value:
+    code: 301
+    masking: 2
+    path: /
+    query: 0
+    target: https://rzp.io/l/BO7es84
+old:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 5.255.91.120
+oldlappy._domainkey:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: TXT
+  value: v=DKIM1\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlTnq5DVMjMIP6w7zueLfLeOYQjrSTfpFMJ+3HnwVYLwVtKE7tA86Db1crZAesV+Erpeq+cOkKcedSRsqn+PN9nBPiai9UZHpCf1zc5WEqmTRaIQ6nuOUMG0qy3RKUdA5hEWJgsGZbJy2h/SeXOcI+xlQFeleaxrYtqKL9O2JgMNe6IpX0c2UrSV5uU9+MUAMd/tkmN11KbeFp9s1Y+pl3usPDb/JSduiEPglAGiCDSQ6yPDyhdm3FrCXiHuiruhd9jlR8yw0VbNqr6irDyW3rmNyC/E0Vbxsku/ss/zlssfp15JLKL6wo42gu//63uvl6OGQzHZTyWvcTVm840kZawIDAQAB
+pay:
+- octodns:
+    cloudflare:
+      auto-ttl: true
+      proxied: true
+  ttl: 300
+  type: A
+  value: 8.8.8.8
+- ttl: 300
+  type: URLFWD
+  value:
+    code: 301
+    masking: 2
+    path: /
+    query: 0
+    target: https://rzp.io/l/s3hI0BM
+ps8:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 5.255.91.120
+shipnow:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 5.255.91.120
+testupdate:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 5.255.91.120
+www:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: oldlappy.com.

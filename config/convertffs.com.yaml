@@ -1,0 +1,73 @@
+---
+? ''
+: - octodns:
+      cloudflare:
+        auto-ttl: true
+    ttl: 300
+    type: A
+    value: 5.255.91.120
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+    ttl: 300
+    type: MX
+    value:
+      exchange: smtp.google.com.
+      preference: 1
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+    ttl: 300
+    type: TXT
+    value: google-site-verification=s1kMLh78xb4BH8VM8CCrmA4FF-al5mJ56YfweVhGvQY
+_minecraft._tcp.oldpotato:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: SRV
+  value:
+    port: 25500
+    priority: 10
+    target: game1.codinger.net.
+    weight: 10
+_minecraft._tcp.potato:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: SRV
+  value:
+    port: 25502
+    priority: 5
+    target: game1.codinger.net.
+    weight: 5
+s2.potato:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 5.255.91.120
+s3.potato:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 5.255.91.120
+www:
+- octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 5.255.91.120
+- ttl: 300
+  type: URLFWD
+  value:
+    code: 301
+    masking: 2
+    path: /*
+    query: 0
+    target: https://convertffs.com
