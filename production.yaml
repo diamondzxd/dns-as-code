@@ -10,6 +10,11 @@ providers:
     class: octodns_cloudflare.CloudflareProvider
     token: env/CLOUDFLARE_TOKEN
 
+manager:
+  plan_outputs:
+    html:
+      class: octodns.provider.plan.PlanHtml
+
 zones:
   # This is a dynamic zone config. The source(s), here `config`, will be
   # queried for a list of zone names and each will dynamically be set up to

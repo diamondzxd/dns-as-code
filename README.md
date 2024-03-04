@@ -1,5 +1,7 @@
 ## DNS as Code for codinger.net
 
+[![OctoDNS Plan](https://github.com/diamondzxd/dns-as-code/actions/workflows/plan.yaml/badge.svg?branch=main)](https://github.com/diamondzxd/dns-as-code/actions/workflows/plan.yaml)
+
 After setting up the environment : 
 
 ### To plan changes
