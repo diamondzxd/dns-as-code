@@ -8,6 +8,8 @@ on:
     paths:
       - '*.yaml'
 
+  workflow_dispatch:
+
 jobs:
   publish:
     name: Publish DNS config from main
