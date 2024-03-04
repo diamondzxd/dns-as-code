@@ -8,6 +8,7 @@ on:
     paths:
       - '*.yaml'
 
+  pull_request:
   workflow_dispatch:
 
 jobs:
