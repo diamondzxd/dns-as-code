@@ -22,3 +22,11 @@ www:
   ttl: 300
   type: A
   value: 51.178.2.59
+www2:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+      proxied: true
+  ttl: 300
+  type: A
+  value: 51.178.2.59
