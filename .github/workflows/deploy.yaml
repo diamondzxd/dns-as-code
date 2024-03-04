@@ -1,7 +1,6 @@
 name: OctoDNS Deploy
 
 on:
-  Deploy config whenever DNS changes are pushed to main.
   push:
     branches:
       - main
