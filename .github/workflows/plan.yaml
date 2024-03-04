@@ -1,13 +1,6 @@
 name: OctoDNS Plan
 
 on:
-  # Deploy config whenever DNS changes are pushed to main.
-  # push:
-  #   branches:
-  #     - main
-  #   paths:
-  #     - '*.yaml'
-
   pull_request:
   workflow_dispatch:
 
