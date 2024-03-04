@@ -1,0 +1,27 @@
+name: OctoDNS Plan
+
+on:
+  # Deploy config whenever DNS changes are pushed to main.
+  push:
+    branches:
+      - main
+    paths:
+      - '*.yaml'
+
+jobs:
+  publish:
+    name: Publish DNS config from main
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+      - run: pip install -r requirements.txt
+      - uses: solvaholic/octodns-sync@main
+        with:
+          config_path: production.yaml
+          doit: ''
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.CLOUDFLARE_TOKEN }}
