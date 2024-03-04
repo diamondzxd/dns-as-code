@@ -11,7 +11,7 @@ on:
 
 jobs:
   publish:
-    name: OctoDNS Deploy
+    name: Deploy the planned config
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
