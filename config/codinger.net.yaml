@@ -137,13 +137,14 @@ mail:
   ttl: 300
   type: TXT
   value: v=spf1 a mx ip4:5.255.91.118 ip6:2a00:1ca8:2a:c::3:0 ~all
-nginx-router.bom1:
-  octodns:
-    cloudflare:
-      auto-ttl: true
-  ttl: 300
-  type: A
-  value: 148.113.15.19
+# Soft Delete
+# nginx-router.bom1:
+#   octodns:
+#     cloudflare:
+#       auto-ttl: true
+#   ttl: 300
+#   type: A
+#   value: 148.113.15.19
 nl1:
   octodns:
     cloudflare:
@@ -157,7 +158,7 @@ router.bom1:
       auto-ttl: true
   ttl: 300
   type: A
-  value: 148.113.15.19
+  value: 192.168.1.1
 router.nl1:
   octodns:
     cloudflare:
