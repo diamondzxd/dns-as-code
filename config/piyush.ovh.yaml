@@ -98,8 +98,8 @@ rdp:
     cloudflare:
       auto-ttl: true
   ttl: 300
-  type: CNAME
-  value: router.bom1.codinger.net.
+  type: A
+  value: 148.113.15.19
 recipe:
   octodns:
     cloudflare:
