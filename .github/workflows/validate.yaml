@@ -21,3 +21,4 @@ jobs:
         uses: GrantBirki/json-yaml-validate@v2.6.1
         with:
           comment: "true"
+          github_token: ${{ secrets.token }}
