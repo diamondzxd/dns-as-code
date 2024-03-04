@@ -202,3 +202,11 @@ www:
   ttl: 300
   type: A
   value: 5.255.91.120
+  
+www2:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 5.255.91.120
