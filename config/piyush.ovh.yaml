@@ -123,14 +123,6 @@ resume:
     path: /*
     query: 0
     target: https://drive.google.com/file/d/1i7oVTeZLLqrsxD2kkRAxR3-uOB144tkc/view?usp=sharing
-resume-v2:
-- octodns:
-    cloudflare:
-      auto-ttl: true
-      proxied: true
-  ttl: 300
-  type: A
-  value: 8.8.8.8
 - ttl: 300
   type: URLFWD
   value:
