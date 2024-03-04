@@ -138,7 +138,7 @@ resume-v2:
     masking: 2
     path: /*
     query: 0
-    target: https://drive.google.com/file/d/1i7oVTeZLLqrsxD2kkRAxR3-uOB144tkc/view?usp=sharing
+    target: https://www.google.com/
 www:
   octodns:
     cloudflare:
