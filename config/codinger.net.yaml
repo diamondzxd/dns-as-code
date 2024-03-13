@@ -151,6 +151,13 @@ nl1:
   ttl: 300
   type: A
   value: 5.255.91.114
+omega.backup:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 77.90.8.15
 router.bom1:
   octodns:
     cloudflare:
