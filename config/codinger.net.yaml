@@ -118,13 +118,6 @@ fr1:
   ttl: 300
   type: A
   value: 51.210.114.62
-gamma.backup:
-  octodns:
-    cloudflare:
-      auto-ttl: true
-  ttl: 300
-  type: A
-  value: 142.132.132.102
 game1:
   octodns:
     cloudflare:
@@ -132,6 +125,13 @@ game1:
   ttl: 300
   type: A
   value: 5.255.91.116
+gamma.backup:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 142.132.132.102
 mail:
 - octodns:
     cloudflare:
