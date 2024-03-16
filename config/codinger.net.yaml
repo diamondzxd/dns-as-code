@@ -49,6 +49,13 @@ _dmarc:
   ttl: 300
   type: TXT
   value: v=DMARC1\; p=none
+alpha.backup:
+- octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 94.130.71.58
 autoconfig:
   octodns:
     cloudflare:
@@ -118,6 +125,13 @@ game1:
   ttl: 300
   type: A
   value: 5.255.91.116
+gamma.backup:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 142.132.132.102
 mail:
 - octodns:
     cloudflare:
