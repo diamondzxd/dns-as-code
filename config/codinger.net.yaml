@@ -63,12 +63,6 @@ autodiscover:
   ttl: 300
   type: CNAME
   value: mail.codinger.net.
-- octodns:
-    cloudflare:
-      auto-ttl: true
-  ttl: 300
-  type: AAAA
-  value: 2a01:4f8:231:f417::a
 befit-backend:
   octodns:
     cloudflare:
