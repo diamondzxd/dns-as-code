@@ -49,13 +49,6 @@ _dmarc:
   ttl: 300
   type: TXT
   value: v=DMARC1\; p=none
-alpha.backup:
-- octodns:
-    cloudflare:
-      auto-ttl: true
-  ttl: 300
-  type: A
-  value: 94.130.71.58
 autoconfig:
   octodns:
     cloudflare:
@@ -70,26 +63,6 @@ autodiscover:
   ttl: 300
   type: CNAME
   value: mail.codinger.net.
-backup1:
-- octodns:
-    cloudflare:
-      auto-ttl: true
-  ttl: 300
-  type: A
-  value: 178.63.165.229
-- octodns:
-    cloudflare:
-      auto-ttl: true
-  ttl: 300
-  type: AAAA
-  value: 2a01:4f8:231:f417::a
-backup.nl1:
-  octodns:
-    cloudflare:
-      auto-ttl: true
-  ttl: 300
-  type: AAAA
-  value: 2a00:1ca8:2a:c::2:0
 befit-backend:
   octodns:
     cloudflare:
@@ -111,13 +84,6 @@ dkim._domainkey:
   ttl: 300
   type: TXT
   value: v=DKIM1\;k=rsa\;t=s\;s=email\;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApwPXgKOPXI9OetmUVgCOVd7NT4mP8KtZ/mONVvu3MlB+/QosrE9G+NIYNXEyzM4T580/9UtZdWhKSSqknsSCTTGjU6ws7+DyVABHxg5fqj5RH8oQkuy0t+nxA0zutdeL4TxNh9GmSVZa+48kFXtK4I13IBAIIRSVPL9/BCo2TuUmwBsJjrYVAk+06EfcllPqHTXbr8UWb8bBcMVVNQ4t7duy6wj8FhUbtsFM0IGpM83iKDej8GFQfGWbmjxc0ziIXPqSx6bIAITnJ+IFnYZdGhIPR3yIQV8gtckfJfYqvt0SwaLK/KN5M9ZFVdbr0l9HC0WmMuqTd31BhLQYLZN2lwIDAQAB
-fr1:
-  octodns:
-    cloudflare:
-      auto-ttl: true
-  ttl: 300
-  type: A
-  value: 51.210.114.62
 game1:
   octodns:
     cloudflare:
@@ -125,13 +91,6 @@ game1:
   ttl: 300
   type: A
   value: 5.255.91.116
-gamma.backup:
-  octodns:
-    cloudflare:
-      auto-ttl: true
-  ttl: 300
-  type: A
-  value: 142.132.132.102
 mail:
 - octodns:
     cloudflare:
@@ -186,15 +145,6 @@ router.nl1:
   ttl: 300
   type: A
   value: 5.255.90.13
-status:
-  ttl: 300
-  type: URLFWD
-  value:
-    code: 302
-    masking: 2
-    path: /
-    query: 0
-    target: https://stats.uptimerobot.com/WQPj5hGE0
 uk1:
   octodns:
     cloudflare:
