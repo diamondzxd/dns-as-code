@@ -137,7 +137,7 @@ router.bom1:
       auto-ttl: true
   ttl: 300
   type: A
-  value: 192.168.1.1
+  value: 148.113.15.19
 router.nl1:
   octodns:
     cloudflare:
