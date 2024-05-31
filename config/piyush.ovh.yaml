@@ -73,7 +73,7 @@ autodiscover:
   ttl: 300
   type: CNAME
   value: mail.codinger.net.
-immich:
+photos:
 - octodns:
     cloudflare:
       auto-ttl: true
@@ -86,13 +86,6 @@ immich:
   ttl: 300
   type: AAAA
   value: 2402:1f00:8300:4ad::3:0
-photos:
-- octodns:
-    cloudflare:
-      auto-ttl: true
-  ttl: 300
-  type: A
-  value: 148.113.15.19
 piyush._domainkey:
   octodns:
     cloudflare:
