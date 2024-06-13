@@ -110,13 +110,6 @@ mail:
   ttl: 300
   type: TXT
   value: v=spf1 a mx ip4:5.255.91.118 ip6:2a00:1ca8:2a:c::3:0 ~all
-monitor-backend:
-- octodns:
-    cloudflare:
-      auto-ttl: true
-  ttl: 300
-  type: A
-  value: 148.113.15.19
 nginx-router.bom1:
   octodns:
     cloudflare:
@@ -152,6 +145,19 @@ router.nl1:
   ttl: 300
   type: A
   value: 5.255.90.13
+sigma.backup:
+- octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 77.90.19.66
+- octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: AAAA
+  value: 2a0d:5940:112:12::a
 uk1:
   octodns:
     cloudflare:
